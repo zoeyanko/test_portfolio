@@ -17,9 +17,9 @@ function GraphicDesign() {
   }, []);
 
   const images = [
-    { original: '/images/image1.png' },
-    { original: '/images/gd1.png' },
-    { original: '/images/gd2.png' },
+    { original: '/images/image1.jpg' },
+    { original: '/images/gd1.jpg' },
+    { original: '/images/gd2.jpg' },
     { original: '/images/gd3.jpg' },
   ];
 

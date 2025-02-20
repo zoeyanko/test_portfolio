@@ -10,7 +10,7 @@ function Illustration() {
 
             {/* Project 1: Playful Illustration for a Magazine */}
             <div className="project">
-              <img src="/images/image5.png" alt="Playful Illustration for a Magazine" />
+              <img src="/images/image5.jpg" alt="Playful Illustration for a Magazine" />
               <h2>Playful Illustration for a Magazine</h2>
               <details className="accordion">
                 <summary>Read more</summary>
@@ -23,7 +23,7 @@ function Illustration() {
 
             {/* Project 2: Data Factory Animated Illustration */}
             <div className="project">
-              <img src="/images/image6.png" alt="Data Factory Animated Illustration" />
+              <img src="/images/image6.jpg" alt="Data Factory Animated Illustration" />
               <h2>Data Factory Animated Illustration</h2>
               <details className="accordion">
                 <summary>Read more</summary>
@@ -35,7 +35,7 @@ function Illustration() {
 
             {/* Project 3: Type of Characters for FIKSURUOKA */}
             <div className="project">
-              <img src="/images/fr.png" alt="Type of Characters for FIKSURUOKA" />
+              <img src="/images/fr.jpg" alt="Type of Characters for FIKSURUOKA" />
               <h2>Type of Characters for FIKSURUOKA</h2>
               <details className="accordion">
                 <summary>Read more</summary>

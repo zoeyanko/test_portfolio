@@ -24,7 +24,7 @@ function GameDesign() {
 
           {/* Project 2: Puzzle Game Mechanics */}
           <div className="project">
-            <img src="/images/sof.png" alt="Puzzle Game Mechanics" />
+            <img src="/images/sof.jpg" alt="Puzzle Game Mechanics" />
             <h2>Puzzle Game Mechanics</h2>
             <details className="accordion">
               <summary>Read more</summary>
