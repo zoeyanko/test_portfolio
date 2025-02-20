@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Base & Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #242424;
+  margin: 0;
+  font-family: 'M PLUS 1', sans-serif;
+  color: #DCD8D6;
+}
+
+/* Gradient overlay */
+.gradient-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allows interaction with content below */
+  transition: background 0.1s ease-out; /* Smooth transition */
+  z-index: -1; /* Ensures it stays in the background */
+}
+
+/* App Container & Layout */
+.app-container {
+  width: 100vw;
+  display: block;
+}
+
+.top-section {
+  display: flex;
+}
+
+
+/* Sidemenu Navbar*/
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust as needed */
+  height: 100vh; /* Full height */
+  padding: 20px;
+  z-index: 1000; /* Ensures Navbar stays on top */
+
+}
+
+.nav-title {
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #DCD8D6;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.nav-title:hover {
+  color: #95CB9F;
+  transform: scale(1.1);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+/* Navigation Hover Effect */
+nav li a {
+  text-decoration: none;
+  color: #DCD8D6;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+
+nav li a:hover {
+  color: #95CB9F;
+  transform: scale(1.1);
+}
+
+/* Main Content & Gallery */
+.maincontent {
+    margin-left: 200px; /* Matches the width of .sidemenu */
+    padding: 20px;
+    flex: 1; 
+
+}
+
+/* Home Page Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 350px;
+  gap: 10px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+/* Home Page Gallery */
+.gallery img,
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Home Page Gallery */
+.gallery-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Home Page Gallery */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay Effects for Home Page Gallery Items */
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #DCD8D6;
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.gallery-item:hover::before,
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+
+
+/* Section & About Content */
+.section {
+  
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10vh;
+}
+
+.section-wrapper {
+  width: 70%;
+  margin-left: calc(20% + 20px);
+}
+
+.section-wrapper h1 {
+  font-size: 32px;
+  color: #DCD8D6;
+  margin-top: 100px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.section-wrapper p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+.section-wrapper strong {
+  font-weight: bold;
+}
+
+/* Link Styling for CV & LinkedIn */
+.linkedin-link,
+.cv-link {
+  margin: 5px 0;
+  display: block;
+}
+
+.linkedin-link a,
+.cv-link a {
+  text-decoration: underline;
+  color: #DCD8D6;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.linkedin-link a:hover,
+.cv-link a:hover {
+  color: #95CB9F;
+}
+
+/* Scroll to Top */
+.scroll-top {
+  text-align: center;
+  margin-top: 300px;
+ 
+}
+
+.scroll-top a {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #DCD8D6;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.scroll-top a:hover {
+  color: #95CB9F;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin: 0 auto;
+  width: 100%;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; */
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.project img {
+/*  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
+ 
+  width: 100%;           
+  max-width: auto;      
+  height: 300px;          
+  object-fit: cover;     
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+header{
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+
+
+.project h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #DCD8D6;
+}
+
+/* Project Gallery */
+
+.gallery-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.image-gallery {
+  overflow: hidden;
+  width: 100%;
+  display: block !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+
+.image-gallery-slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain; /* Keeps proportions intact */
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Adjust thumbnail styling */
+.image-gallery-thumbnail {
+  width: 80px !important;  /* Set a fixed width */
+  height: 80px !important; /* Set the same fixed height */
+  object-fit: cover !important; /* Ensures images are cropped to fit */
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-gallery-thumbnail img {
+  width: 80px !important;  
+  height: 80px !important;
+  object-fit: scale-down;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+
+.image-gallery-thumbnail.active, /* Selected image */
+.image-gallery-thumbnail:focus {
+  outline: none !important; /* color stroke */
+  border: none !important;
+  border-radius: 0 !important; /* Remove rounded corners */
+}
+
+
+.image-gallery-thumbnail:hover {
+  transform: scale(1.1);
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+
+
+/* arrow styles */
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* Adjust the width of the buttons */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+.image-gallery-left-nav .image-gallery-svg:hover,
+.image-gallery-right-nav .image-gallery-svg:hover {
+  stroke: #95CB9F; 
+}
+
+.image-gallery-fullscreen-button .image-gallery-svg {
+  width: 30px !important; /* Adjust size if needed */
+  height: 30px !important;
+  fill: none !important;
+  stroke: #f8f8f8 !important;
+  stroke-width: 2px !important;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.image-gallery-fullscreen-button:hover .image-gallery-svg {
+  stroke: #95CB9F !important; 
+}
+
+
+
+
+/* Accordion Styles */
+.accordion summary {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #DCD8D6;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.accordion summary:hover {
+  color: #95CB9F;
+}
+
+.accordion p.hidden-text {
+  margin-top: 10px;
+  font-size: 20px;
+ 
+  display: none;
+}
+
+.accordion[open] p.hidden-text {
+  display: block;
+}
+
+.accordion summary::after {
+  content: " ▼";
+  font-size: 14px;
+}
+
+.accordion[open] summary::after {
+  content: " ▲";
+}
+
+/* Mobile Link */
+.mobile-link {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding: 0;
+  color: #DCD8D6;
+  text-decoration: underline;
+  display: none;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .sidemenu a:hover img {
+    content: url("images/ZoeYanko_logo.svg");
+  }
+  
+  .sidemenu {
+    position: fixed;  /* Keep logo fixed */
+    top: 0;
+    left: 0;
+    width: 100%;      /* Full width */
+    height: auto;     /* Only as tall as the logo */
+    background-color: #242424;  /* Background to make it visible */
+    z-index: 1000;    /* Stay on top */
+    text-align: center;  /* Center the logo */
+    padding: 10px 0;  /* Add some spacing */
+  }
+
+  .sidemenu nav {
+    display: none;
+  }
+
+
+
+  .maincontent {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-top: 40px;
+  }
+  
+  .projects{
+    grid-template-columns: 1fr;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+  }
+
+  .gallery-item {
+    margin-bottom: 0;
+  
+  }
+
+  .section-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .mobile-link{
+    display: flex;
+  }
+ 
+  /* Project Gallery */
+  .gallery-container {
+   /* width: 100%;
+    max-width: 100%;
+    padding: 10px; */
+
+    width: 100%;
+    max-width: 900px; /* Adjust based on your layout */
+    margin: 0; /* Remove auto centering */
+    padding: 10px 0;
+    text-align: left;
+
+  }
+
+   /* Ensure fullscreen container takes full viewport height */
+   .image-gallery-fullscreen .image-gallery-slide-wrapper {
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Ensure images scale properly in fullscreen */
+  .image-gallery-fullscreen .image-gallery-slide img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: auto;
+    display: block;
+  }
+
+  
+
+}
