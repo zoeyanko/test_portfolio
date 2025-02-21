@@ -8,7 +8,7 @@ function GameDesign() {
 
           {/* Project 1: Interactive Storytelling */}
           <div className="project">
-            <img src="/images/image2.png" alt="Interactive Storytelling" />
+            <img src="/images/image2.jpg" alt="Interactive Storytelling" />
             <h2>Interactive Storytelling</h2>
             <details className="accordion">
               <summary>Read more</summary>

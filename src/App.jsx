@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './style.css';
+import "./style.css";  // If style.css is in the root
 import GraphicDesign from './graphicdesign';
 import GameDesign from './gamedesign';
 import Animation from './animation';

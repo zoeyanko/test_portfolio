@@ -10,7 +10,7 @@ function Illustration() {
 
             {/* Project 1: Playful Illustration for a Magazine */}
             <div className="project">
-              <img src="/images/image5.jpg" alt="Playful Illustration for a Magazine" />
+              <img src="/images/image4.jpg" alt="Playful Illustration for a Magazine" />
               <h2>Playful Illustration for a Magazine</h2>
               <details className="accordion">
                 <summary>Read more</summary>
