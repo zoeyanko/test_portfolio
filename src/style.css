@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 /* Base & Global Styles */
 *,
 *::before,
@@ -15,6 +20,16 @@ body {
   font-family: 'M PLUS 1', sans-serif;
   color: #DCD8D6;
 }
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
 
 /* Gradient overlay */
 .gradient-overlay {
@@ -446,9 +461,7 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 768px) {
   
-  .sidemenu a:hover img {
-    content: url("images/ZoeYanko_logo.svg");
-  }
+
   
   .sidemenu {
     position: fixed;  /* Keep logo fixed */

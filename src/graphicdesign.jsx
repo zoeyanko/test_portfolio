@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import './style.css';
+import "./style.css"; 
 
 function GraphicDesign() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
