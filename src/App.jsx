@@ -43,22 +43,22 @@ function App() {
             <Route path="/" element={
               <div className="gallery">
                 <Link to="/graphic-design" className="gallery-item">
-                  <img src="/images/image1.jpg" alt="Graphic Design" />
+                  <img src="`${import.meta.env.BASE_URL}images/image1.jpg" alt="Graphic Design" />
                   <div className="overlay">Graphic Design</div>
                 </Link>
                 <Link to="/graphic-design" className="mobile-link">Graphic Design</Link>
                 <Link to="/game-design" className="gallery-item">
-                  <img src="/images/image2.jpg" alt="Game Design" />
+                  <img src="`${import.meta.env.BASE_URL}images/image2.jpg" alt="Game Design" />
                   <div className="overlay">Game Design</div>
                 </Link>
                 <Link to="/game-design" className="mobile-link">Game Design</Link>
                 <Link to="/animation" className="gallery-item">
-                  <img src="/images/image3.jpg" alt="Animation" />
+                  <img src="./images/image3.jpg" alt="Animation" />
                   <div className="overlay">Animation</div>
                 </Link>
                 <Link to="/animation" className="mobile-link">Animation</Link>
                 <Link to="/illustration" className="gallery-item">
-                  <img src="/images/image4.jpg" alt="Illustration" />
+                  <img src="./images/image4.jpg" alt="Illustration" />
                   <div className="overlay">Illustration</div>
                 </Link>
                 <Link to="/illustration" className="mobile-link">Illustration</Link>

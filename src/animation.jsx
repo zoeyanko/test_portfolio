@@ -8,7 +8,7 @@ function Animation() {
 
           {/* Project 1: Experimental Motion */}
           <div className="project">
-            <img src="/images/image3.jpg" alt="Experimental Motion" />
+            <img src="./images/image3.jpg" alt="Experimental Motion" />
             <h2>Experimental Motion</h2>
             <details className="accordion">
               <summary>Read more</summary>
@@ -23,7 +23,7 @@ function Animation() {
 
           {/* Project 2: Character Animation */}
           <div className="project">
-            <img src="/images/ani1.jpg" alt="Character Animation" />
+            <img src="./images/ani1.jpg" alt="Character Animation" />
             <h2>Character Animation</h2>
             <details className="accordion">
               <summary>Read more</summary>

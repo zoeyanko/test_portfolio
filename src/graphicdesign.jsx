@@ -17,10 +17,10 @@ function GraphicDesign() {
   }, []);
 
   const images = [
-    { original: '/images/image1.jpg' },
-    { original: '/images/gd1.jpg' },
-    { original: '/images/gd2.jpg' },
-    { original: '/images/gd3.jpg' },
+    { original: './images/image1.jpg' },
+    { original: './images/gd1.jpg' },
+    { original: './images/gd2.jpg' },
+    { original: './images/gd3.jpg' },
   ];
 
   return (
@@ -60,7 +60,7 @@ function GraphicDesign() {
 
         {/* Project 2: Book Cover Designs */}  
         <div className="project">
-          <img src="/images/infographic.jpg" alt="Book Cover Designs" />
+          <img src="./images/infographic.jpg" alt="Book Cover Designs" />
           <h2>Data Visualization</h2>
           <details className="accordion">
             <summary>Read more</summary>
@@ -79,7 +79,7 @@ function GraphicDesign() {
 
         {/* Project 3: Posters for a Cultural Event */}
         <div className="project">
-          <img src="/images/poster.jpg" alt="Posters for a Cultural Event" />
+          <img src="./images/poster.jpg" alt="Posters for a Cultural Event" />
           <h2>Poster Design</h2>
           <details className="accordion">
             <summary>Read more</summary>

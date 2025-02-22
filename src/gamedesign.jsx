@@ -8,7 +8,7 @@ function GameDesign() {
 
           {/* Project 1: Interactive Storytelling */}
           <div className="project">
-            <img src="/images/image2.jpg" alt="Interactive Storytelling" />
+            <img src="./images/image2.jpg" alt="Interactive Storytelling" />
             <h2>Interactive Storytelling</h2>
             <details className="accordion">
               <summary>Read more</summary>
@@ -24,7 +24,7 @@ function GameDesign() {
 
           {/* Project 2: Puzzle Game Mechanics */}
           <div className="project">
-            <img src="/images/sof.jpg" alt="Puzzle Game Mechanics" />
+            <img src="./images/sof.jpg" alt="Puzzle Game Mechanics" />
             <h2>Puzzle Game Mechanics</h2>
             <details className="accordion">
               <summary>Read more</summary>
@@ -40,7 +40,7 @@ function GameDesign() {
 
           {/* Project 3: Virtual Reality Experience */}
           <div className="project">
-            <img src="/images/vr.jpg" alt="Virtual Reality Experience" />
+            <img src="./images/vr.jpg" alt="Virtual Reality Experience" />
             <h2>Virtual Reality Experience</h2>
             <details className="accordion">
               <summary>Read more</summary>
