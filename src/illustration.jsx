@@ -39,7 +39,7 @@ function Illustration() {
               <h2>Type of Characters for FIKSURUOKA</h2>
               <details className="accordion">
                 <summary>Read more</summary>
-                <h3>Fun and Engaging Food Mascots</h3>
+                <h3>Fun and Engaging Mascots</h3>
                 <p>
                   Created a unique set of illustrated characters for FIKSURUOKA, a brand promoting sustainable and affordable food. The designs aimed to communicate playfulness and eco-conscious messaging, making the brand more relatable to its audience.
                 </p>

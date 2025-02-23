@@ -3,26 +3,18 @@ import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import "./style.css"; 
 
-function GraphicDesign() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+// function GraphicDesign() {
+//  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  useEffect(() => {
-    // Update isMobile state when window resizes
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+//  useEffect(() => { const handleResize = () => {
+//      setIsMobile(window.innerWidth <= 768); };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+ //   window.addEventListener('resize', handleResize);
+//    return () => window.removeEventListener('resize', handleResize); }, []);
 
-  const images = [
-    { original: './images/image1.jpg' },
-    { original: './images/gd1.jpg' },
-    { original: './images/gd2.jpg' },
-    { original: './images/gd3.jpg' },
-  ];
+ // const images = [    { original: './images/image1.jpg' },  ];
 
+ function GraphicDesign() {
   return (
     <div className="maincontent" id="top">
       <div className="projects">
@@ -30,35 +22,20 @@ function GraphicDesign() {
           <h1>Graphic Design</h1>
         </header>
 
+        {/* Project 1 */} 
         <div className="project">
-          <div className="gallery-container">
-            <ImageGallery
-              items={images}
-              showThumbnails={false} /* Thumbnails removed */
-              showPlayButton={false}
-              showFullscreenButton={false}
-            />
-          </div>
-
+        <img src="./images/image1.jpg" alt="Book Cover Designs" />
           <h2>Publication Design</h2>
           <details className="accordion">
             <summary>Read more</summary>
             <h3>Creative Approach to Circular Economy</h3>
             <p>
-              In 2021, I worked on the graphic design for two publications as part of a project for a Circular Economy course.
-              This project emphasized sustainability and aimed to convey the importance of eco-friendly practices. 
-              In my Sustainable Design - Learning Diary, I explore key concepts and strategies in sustainable design. 
-              I discuss fundamental sustainability concerns, multi-level design models, the role of eco-labels, 
-              and how design can effectively communicate sustainability. I reflect on my personal carbon footprint 
-              reduction, redesign unsustainable products, and work on a group project utilizing 
-              orange peels for biodegradable products. Throughout this study, I emphasize the complexity of sustainable design, 
-              highlighting challenges like greenwashing, material limitations, and the need for systemic changes across industries, 
-              policies, and consumer behavior.
+              In 2021, I worked on the graphic design for two publications as part of a project in a Circular Economy course, emphasizing sustainability and the importance of eco-friendly practices. The Sustainable Design – Learning Diary explores key concepts and strategies in sustainable design, addressing fundamental sustainability concerns, multi-level design models, the role of eco-labels, and the ways design can effectively communicate sustainability. The research includes reflections on carbon footprint reduction, redesigning unsustainable products, and a group project utilizing orange peels for biodegradable materials. This study underscores the complexity of sustainable design, highlighting challenges such as greenwashing, material limitations, and the need for systemic changes across industries, policies, and consumer behavior.
             </p>
           </details>
         </div>
 
-        {/* Project 2: Book Cover Designs */}  
+        {/* Project 2 */}  
         <div className="project">
           <img src="./images/infographic.jpg" alt="Book Cover Designs" />
           <h2>Data Visualization</h2>
@@ -77,7 +54,7 @@ function GraphicDesign() {
           </details>
         </div>
 
-        {/* Project 3: Posters for a Cultural Event */}
+        {/* Project 3 */}
         <div className="project">
           <img src="./images/poster.jpg" alt="Posters for a Cultural Event" />
           <h2>Poster Design</h2>
