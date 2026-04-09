@@ -82,9 +82,6 @@ function App() {
               <br /><br />
               Don’t hesitate to reach out <strong>zoe.yanko</strong> at <strong>gmail.com</strong>
             </p>
-            <p className="cv-link">
-              <a href="/docs/CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
-            </p>
             <p className="linkedin-link">
               <a href="https://www.linkedin.com/in/irina-valeeva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </p>
