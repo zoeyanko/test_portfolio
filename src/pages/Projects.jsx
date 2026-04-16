@@ -6,16 +6,23 @@ import projects from "../data/projects";
 
 const designCategories = [
   { label: "Brand Identity", value: "brand-identity" },
+  { label: "Service Design", value: "service-design" },
   { label: "Digital & Web Design", value: "digital-web-design" },
-  { label: "Campaigns & Art Direction", value: "campaigns-art-direction" },
+  
+  /* 
   { label: "Editorial & Print", value: "editorial-print" },
-  { label: "Packaging Design", value: "packaging-design" },
+  { label: "Packaging Design", value: "packaging-design" }, 
+  { label: "Campaigns & Art Direction", value: "campaigns-art-direction" },
+  */
+
   { label: "Illustration", value: "illustration" }
 ];
 
 const artCategories = [
-  { label: "What is art?", value: "what-is-art" },
-   { label: "New Media & Interactive", value: "new-media-interactive" },
+  { label: "New Media & Interactive", value: "new-media-interactive" },
+  { label: "Motion Graphics", value: "motion-graphics" }
+
+  /*  { label: "3D & CGI", value: "3d-cgi" } */
   
 ];
 
