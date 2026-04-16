@@ -1,101 +1,111 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import "./style.css"; 
-import GraphicDesign from './graphicdesign';
-import GameDesign from './gamedesign';
-import Animation from './animation';
-import Illustration from './illustration';
-import Navbar from './Navbar';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./style.css";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 
-const GradientPosition = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+const homeImages = [
+  "/images/home2.jpg",
+  "/images/home3.jpg",
+  "/images/home4.jpg",
+];
+
+function Home() {
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
-    const updateMousePosition = (ev) => {
-      setMousePosition({ x: ev.clientX, y: ev.clientY });
-    };
-    window.addEventListener('mousemove', updateMousePosition);
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % homeImages.length);
+    }, 20000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  return mousePosition;
-};
+  return (
+    <main
+      className="home-page"
+      style={{ backgroundImage: `url(${homeImages[currentImage]})` }}
+    >
+      <div className="home-overlay"></div>
+
+      <SiteHeader />
+
+      <section className="home-center">
+        <Link to="/projects" className="home-main-link">Projects</Link>
+        <Link to="/diaries" className="home-main-link">Diary</Link>
+      </section>
+
+      <SiteFooter />
+    </main>
+  );
+}
+
+
+function Diaries() {
+  return (
+    <main className="page">
+      <SiteHeader />
+
+      <div className="page-content">
+        <div className="subnav-wrapper">
+          <nav className="subnav">
+            <NavLink to="/projects" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
+              Projects
+            </NavLink>
+            <NavLink to="/diaries" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
+             Diary
+            </NavLink>
+          </nav>
+         </div>
+      <div className="page-inner">
+        <p>Diary entries here.</p>
+      </div>
+       
+      </div>
+      <SiteFooter />
+    </main>
+  );
+}
+
+function About() {
+  return (
+    <main className="page">
+      <SiteHeader />
+
+      <div className="page-content">
+        <div className="subnav-wrapper">
+          <nav className="subnav">
+            <NavLink to="/projects" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
+              Projects
+            </NavLink>
+            <NavLink to="/diaries" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
+             Diary
+            </NavLink>
+          </nav>
+         </div>
+         <div className="page-inner">
+        <p>Education, CV, bio, and contact here.</p>
+      </div>
+
+      </div>
+      <SiteFooter />
+    </main>
+    
+  );
+}
 
 function App() {
-  const position = GradientPosition();
-
   return (
     <Router>
-      <div 
-        className="app-container"
-        style={{
-          position: 'relative',
-          overflow: 'hidden',
-          minHeight: '100vh',
-          backgroundImage: `radial-gradient(circle 900px at ${position.x}px ${position.y}px,rgb(45, 33, 74), rgba(36, 36, 36, 0.02))`
-        }}
-      >
-        <Navbar />
-        <div className="maincontent">
-          <Routes>
-            <Route path="/" element={
-              <div className="gallery">
-                <Link to="/graphic-design" className="gallery-item">
-                  <img src="images/image1.jpg" alt="Graphic Design" />
-                  <div className="overlay">Graphic Design</div>
-                </Link>
-                <Link to="/graphic-design" className="mobile-link">Graphic Design</Link>
-                <Link to="/game-design" className="gallery-item">
-                  <img src="images/image2.jpg" alt="Game Design" />
-                  <div className="overlay">Game Design</div>
-                </Link>
-                <Link to="/game-design" className="mobile-link">Game Design</Link>
-                <Link to="/animation" className="gallery-item">
-                  <img src="images/image3.jpg" alt="Animation" />
-                  <div className="overlay">Animation</div>
-                </Link>
-                <Link to="/animation" className="mobile-link">Animation</Link>
-                <Link to="/illustration" className="gallery-item">
-                  <img src="images/image4.jpg" alt="Illustration" />
-                  <div className="overlay">Illustration</div>
-                </Link>
-                <Link to="/illustration" className="mobile-link">Illustration</Link>
-              </div>
-            } />
-            <Route path="/graphic-design" element={<GraphicDesign />} />
-            <Route path="/game-design" element={<GameDesign />} />
-            <Route path="/animation" element={<Animation />} />
-            <Route path="/illustration" element={<Illustration />} />
-          </Routes>
-        </div>
-        <div className="section" id="aboutSection">
-          <div className="section-wrapper">
-            <h1>Hello there!</h1>
-            <p className='about'>
-              I am a multidisciplinary artist and designer with a love for all things playful,
-              fun, and moody. My work is characterized by a unique blend of creativity,
-              playfulness, and attention to detail. I believe that every project deserves a unique
-              touch that reflects its personality and goals, and I strive to bring that magic to
-              every piece of work.
-              <br /><br />
-              Don’t hesitate to reach out <strong>zoe.yanko</strong> at <strong>gmail.com</strong>
-            </p>
-            <p className="linkedin-link">
-              <a href="https://www.linkedin.com/in/irina-valeeva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
-            <p className="scroll-top">
-              <a href="#" onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}>
-                back to top
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/diaries" element={<Diaries />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </Router>
   );
 }
