@@ -5,6 +5,7 @@ import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
+import About from "./pages/About";
 
 const homeImages = [
   "/images/home2.jpg",
@@ -42,7 +43,6 @@ function Home() {
   );
 }
 
-
 function Diaries() {
   return (
     <main className="page">
@@ -51,48 +51,28 @@ function Diaries() {
       <div className="page-content">
         <div className="subnav-wrapper">
           <nav className="subnav">
-            <NavLink to="/projects" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}
+            >
               Projects
             </NavLink>
-            <NavLink to="/diaries" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
-             Diary
+            <NavLink
+              to="/diaries"
+              className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}
+            >
+              Diary
             </NavLink>
           </nav>
-         </div>
-      <div className="page-inner">
-        <p>Diary entries here.</p>
+        </div>
+
+        <div className="page-inner">
+          <p>Diary entries here.</p>
+        </div>
       </div>
-       
-      </div>
+
       <SiteFooter />
     </main>
-  );
-}
-
-function About() {
-  return (
-    <main className="page">
-      <SiteHeader />
-
-      <div className="page-content">
-        <div className="subnav-wrapper">
-          <nav className="subnav">
-            <NavLink to="/projects" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
-              Projects
-            </NavLink>
-            <NavLink to="/diaries" className={({ isActive }) => isActive ? "subnav-link active" : "subnav-link"}>
-             Diary
-            </NavLink>
-          </nav>
-         </div>
-         <div className="page-inner">
-        <p>Education, CV, bio, and contact here.</p>
-      </div>
-
-      </div>
-      <SiteFooter />
-    </main>
-    
   );
 }
 
