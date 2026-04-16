@@ -1,23 +1,27 @@
 const projects = [
   {
     slug: "sustainabele-design-publishing",
-    title: "Sustainable Design Publishing",
-    year: 2025,
-    type: "commercial", // commercial | personal
+    title: "Roomies App Design",
+    year: 2022,
+    type: "personal", // commercial | personal
     discipline: "design", // design | art
-    categories: ["brand-identity", "editorial-print"],
-    client: "Studio Example",
-    metaTopRight: "Print",
+    categories: ["digital-web-design"],
+    client: "Aalto University",
+    metaTopRight: "UX Case Study",
     tagBottomLeft: "Commercial",
-    tagBottomRight: "Graphic Design",
+    tagBottomRight: "Web Design",
     description:
-      "Sustainable Design Publishing is a visual identity and digital presence created for a contemporary creative practice. The project focused on balancing atmospheric softness with clear structure across print and web touchpoints.",
-    thumbnail: "/images/project-1/image1.jpg",
+      "Roomies is a mobile app concept designed to help finding local roommates in Helsinki. The design focuses on creating a user-friendly experience while addressing the challenges of finding compatible roommates in a new city. The app includes features such as personalized profiles, compatibility matching, and secure communication channels to facilitate the roommate search process.",
+    thumbnail: "/images/roomies/roomies1.jpg",
     media: [
-      { type: "image", src: "/images/project-1/gd1.jpg", alt: "Soft Echo image 1" },
-      { type: "image", src: "/images/project-1/gd2.jpg", alt: "Soft Echo image 2" },
-      { type: "gif", src: "/images/soft-echo/process.gif", alt: "Video test" },
-      { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID" }
+      { type: "image", src: "/images/roomies/roomies1.jpg", alt: "App Design" },
+      { type: "gif", src: "/images/roomies/roomies2.gif", alt: "Roomies GIF" },
+      { type: "image", src: "/images/roomies/roomies3.png", alt: "App Design" },
+      { type: "image", src: "/images/roomies/roomies5.png", alt: "App Design" },
+      { type: "image", src: "/images/roomies/roomies6.png", alt: "App Design" },
+      { type: "image", src: "/images/roomies/roomies7.png", alt: "App Design" },
+      { type: "image", src: "/images/roomies/roomies8.jpg", alt: "App Design" }
+
     ]
   },
   {
@@ -33,10 +37,10 @@ const projects = [
     tagBottomRight: "New Media & Interactive",
     description:
       "Night Bloom is a speculative visual experiment combining illustration, moving image, and interactive logic into a layered installation language.",
-    thumbnail: "public/images/placeholder-image.jpg",
+    thumbnail: "/images/image3.jpg",
     media: [
-      { type: "image", src: "/images/night-bloom/01.jpg", alt: "Night Bloom image 1" },
-      { type: "image", src: "/images/night-bloom/02.jpg", alt: "Night Bloom image 2" }
+      { type: "image", src: "/images/image3.jpg", alt: "Night Bloom image 1" }
+    
     ]
   },
   {
@@ -52,10 +56,10 @@ const projects = [
     tagBottomRight: "Interactive",
     description:
       "Play State explores playful interaction and motion-led visual storytelling through a game-inspired visual environment.",
-    thumbnail: "public/images/placeholder-image.jpg",
+    thumbnail: "/images/vr.jpg",
     media: [
-      { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID" },
-      { type: "image", src: "/images/play-state/01.jpg", alt: "Play State screenshot" }
+      { type: "video", src: "https://www.youtube.com/embed/y4gfT66Ws4c?si=8fDSaY7K4DakRo0w" },
+      { type: "image", src: "/images/vr.jpg", alt: "Play State screenshot" }
     ]
   }
 ];
