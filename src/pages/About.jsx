@@ -185,7 +185,7 @@ function About() {
               <div className="about-practice-grid">
                 <p>Visual communication</p>
                 <p>Digital design</p>
-                <p>Interaction &amp; new media</p>
+                <p>Interaction &amp; New Media</p>
                 <p>Art direction</p>
                 <p>Research-driven design</p>
               </div>
