@@ -38,8 +38,7 @@ function About() {
                 <div className="about-intro-left">
                   <p><strong>Zoe Yanko</strong></p>
                   <p>Designer, Media Artist</p>
-                  <p>(1999)</p>
-                  <p>Based in Helsinki, FI</p>
+                  <p>(1998)</p>
                 </div>
 
                 <div className="about-intro-right">
@@ -64,14 +63,7 @@ function About() {
                 <p>
                   I’m a Helsinki-based designer and media artist. I work across
                   visual design, creative production, and digital media, using
-                  design as a tool to shape experiences and ways of relating to
-                  technology.
-                </p>
-
-                <p>
-                  My work spans visual identities, digital experiences, motion,
-                  and interactive projects, often developed through collaboration
-                  with cultural organizations and interdisciplinary teams.
+                  design as a tool to shape experiences.
                 </p>
 
                 <p>
@@ -101,7 +93,6 @@ function About() {
                   <div className="about-item-main">
                     <p><strong>BA Design</strong></p>
                     <p className="about-place"><em>Aalto University</em></p>
-                    <p>Minor: Service Design (Information Technology Program)</p>
                   </div>
                   <div className="about-item-side">
                     <p>2020 — 2023</p>
@@ -110,8 +101,9 @@ function About() {
 
                 <div className="about-item">
                   <div className="about-item-main">
-                    <p><strong>Industrial and Product Design</strong></p>
+                    <p><strong>Product Design</strong></p>
                     <p className="about-place"><em>Vocational College of Piippola</em></p>
+                    <p>(taideteollisuusalan perustutkinto)</p>
                   </div>
                   <div className="about-item-side">
                     <p>2015 — 2017</p>
@@ -181,7 +173,7 @@ function About() {
                     <p>Graphic and print design.</p>
                   </div>
                   <div className="about-item-side">
-                    <p>2018 — 2019</p>
+                    <p>2019</p>
                   </div>
                 </div>
               </div>
