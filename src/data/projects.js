@@ -2,7 +2,7 @@ const projects = [
  
 
 
-  {
+/*  {
     slug: "react-portfolio",
     title: "React Portfolio Website",
     year: 2025,
@@ -21,12 +21,34 @@ const projects = [
     ]
   },
 
+*/
 
+{
+  slug: "tidal-dance",
+  title: "Tidal Dance",
+  year: 2024,
+  type: "personal",
+  discipline: "art",
+  categories: ["motion-graphics"],
+  client: "Self-initiated",
+  metaTopRight: "Audio-reactive artwork",
+  tagBottomLeft: "Personal",
+  tagBottomRight: "Motion Design",
+  description:
+    "Created in TouchDesigner, the visuals draw from digital plant forms inspired by album artwork and visual programming experiments. Like seaweed responding to subtle currents, the piece explores how emotion and perception shift together, translating sound into motion and atmosphere.",
+  thumbnail: "/images/tidal/tidal1.png",
+  media: [
+    {type: "video", src: "https://www.youtube.com/embed/HiFwSHgGXZQ" },
+    { type: "image", src: "/images/tidal/tidal2.png", alt: "Tidal Dance still" },
+    { type: "image", src: "/images/tidal/tidal3.png", alt: "Tidal Dance still" },
+    { type: "image", src: "/images/tidal/tidal1.png", alt: "Tidal Dance still" }
 
+  ]
+},
 
  {
     slug: "bloom-visuals",
-    title: "Graphics for Live Performance",
+    title: "Bloom Performance Visuals",
     year: 2023,
     type: "commercial",
     discipline: "art",
@@ -37,9 +59,15 @@ const projects = [
     tagBottomRight: "3D Animation",
     description:
     "3D animated visuals created for the live performance ‘Bloom’. Developed in collaboration with the musicians, the visuals were projected as dynamic stage environments, translating sound into immersive visual atmospheres. The visuals were presented at the Giga-Hertz Festival for Electronic Music and Sound Art 2023, held at ZKM | Center for Art and Media, Karlsruhe, Germany.",    
+
     thumbnail: "/images/image3.jpg",
     media: [
-      { type: "image", src: "/images/image3.jpg", alt: "Night Bloom image 1" }
+      { type: "image", src: "/images/bloom/bloom1.jpg", alt: "Night Bloom image 1" },
+      { type: "image", src: "/images/bloom/bloom2.png", alt: "Night Bloom image 3" },
+      { type: "image", src: "/images/bloom/bloom3.png", alt: "Night Bloom image 2" },
+      { type: "image", src: "/images/bloom/bloom4.png", alt: "Night Bloom image 4" },
+      { type: "image", src: "/images/bloom/bloom5.png", alt: "Night Bloom image 5" },
+      { type: "image", src: "/images/bloom/bloom6.png", alt: "Night Bloom image 6" }
     
     ]
   },
@@ -51,7 +79,7 @@ const projects = [
     year: 2022,
     type: "commercial",
     discipline: "design",
-    categories: ["service-design", "research"],
+    categories: ["service-design", "digital-web-design"],
     client: "City of Helsinki",
     metaTopRight: "Service Design",
     tagBottomLeft: "Commercial",
@@ -113,7 +141,7 @@ const projects = [
     tagBottomRight: "Web Design",
     description:
       "Roomies is a mobile app concept designed to help people find compatible roommates in Helsinki. The project focuses on creating a smooth onboarding experience and reducing friction in profile creation. Features include personality-based matching, customizable profiles, and a structured interaction flow that supports intuitive and positive user experience.",
-    thumbnail: "/images/roomies/roomies1.jpg",
+    thumbnail: "/images/roomies/roomies8.jpg",
     media: [
       { type: "image", src: "/images/roomies/roomies1.jpg", alt: "App Design" },
       { type: "gif", src: "/images/roomies/roomies2.gif", alt: "Roomies GIF" },
